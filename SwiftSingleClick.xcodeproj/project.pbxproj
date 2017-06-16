@@ -14,6 +14,7 @@
 		462531D41EF3C65200E13A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462531D21EF3C65200E13A9F /* LaunchScreen.storyboard */; };
 		462531DF1EF3C65200E13A9F /* SwiftSingleClickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462531DE1EF3C65200E13A9F /* SwiftSingleClickTests.swift */; };
 		462531EA1EF3C65200E13A9F /* SwiftSingleClickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462531E91EF3C65200E13A9F /* SwiftSingleClickUITests.swift */; };
+		462531F91EF3C6BD00E13A9F /* UIView+SingleClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462531F81EF3C6BD00E13A9F /* UIView+SingleClick.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		462531E51EF3C65200E13A9F /* SwiftSingleClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSingleClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		462531E91EF3C65200E13A9F /* SwiftSingleClickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSingleClickUITests.swift; sourceTree = "<group>"; };
 		462531EB1EF3C65200E13A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462531F81EF3C6BD00E13A9F /* UIView+SingleClick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SingleClick.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		462531C81EF3C65200E13A9F /* SwiftSingleClick */ = {
 			isa = PBXGroup;
 			children = (
+				462531F71EF3C6A900E13A9F /* SingleClick */,
 				462531C91EF3C65200E13A9F /* AppDelegate.swift */,
 				462531CB1EF3C65200E13A9F /* ViewController.swift */,
 				462531CD1EF3C65200E13A9F /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				462531EB1EF3C65200E13A9F /* Info.plist */,
 			);
 			path = SwiftSingleClickUITests;
+			sourceTree = "<group>";
+		};
+		462531F71EF3C6A900E13A9F /* SingleClick */ = {
+			isa = PBXGroup;
+			children = (
+				462531F81EF3C6BD00E13A9F /* UIView+SingleClick.swift */,
+			);
+			name = SingleClick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				462531CC1EF3C65200E13A9F /* ViewController.swift in Sources */,
+				462531F91EF3C6BD00E13A9F /* UIView+SingleClick.swift in Sources */,
 				462531CA1EF3C65200E13A9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U42GF86Q4D;
 				INFOPLIST_FILE = SwiftSingleClick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.taurusxi.SwiftSingleClick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U42GF86Q4D;
 				INFOPLIST_FILE = SwiftSingleClick/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.taurusxi.SwiftSingleClick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
